@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projek Akhir</title>
+  <style>
+
+    body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(HomePage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#PlayHome{
+    font-size: 3.2rem;
+    color: #286F67;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    top: 232px;
+    left: 603px;
+    text-decoration: none;
+    background: none;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+#PlayHome1{
+    font-size: 3.2rem;
+    color: #286F67;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    top: 462px;
+    left: 603px;
+    text-decoration: none;
+    background-color: none;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+#Ayub{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    bottom: 20px;
+    color:hsl(0, 0%, 100%)
+}
+#Kelas{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
+    color:hsl(19, 100%, 61%)
+}
+.background-image {
+    position: fixed;
+    top: o; left: 0;
+    background-image: url(HomePage.png);
+    background-size: cover;
+}
+.Homes{
+    position: absolute;
+    border-radius: 15px;
+    width: 1505px;
+    height: 90px;
+    background-color: rgba(88, 161, 94, 0.178);
+    backdrop-filter: blur(70px);
+    animation: fadeIn 0.5s ease-out;
+}
+#containerSW{
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 230px;
+    left: 95px;
+    padding: 50px;
+    width: 703px;
+    height: 45px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+#containerSW:hover{
+  background-color: hsl(0, 0%, 71%);
+  animation: fadeIn 0.5s ease-out;
+}
+#containerCT{
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 455px;
+    left: 95px;
+    padding: 50px;
+    width: 703px;
+    height: 45px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+#containerCT:hover{
+  background-color: hsl(0, 0%, 71%);
+  animation: fadeIn 0.5s ease-out;
+}
+#blurcontainerSW{
+    background-color: #286f6788;
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    padding: 50px;
+    width: 703px;
+    height: 45px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+#blurcontainerCT{
+    background-color: #286f677c;
+    position: absolute;
+    top: 470px;
+    left: 70px;
+    padding: 50px;
+    width: 703px;
+    height: 45px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+}
+.containerSB {
+    background-color: white;
+    margin-top: 100vh;
+    left: 20px;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-out;
+}
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0 ;
+      left: -400px;
+      background-color: #81af7c;
+      color: rgb(75, 75, 75);
+      transition: left 0.3s ease;
+      padding: 23px;
+      z-index: 1000;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar h2 {
+      margin: 1rem 0;
+    }
+
+    .sidebar-close {
+      background: none;
+      border: none;
+      color: red;
+      font-size: 20px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .sidebar textarea {
+      color: #333;
+      background-color: #cecece;
+      width: 91%;
+      border-radius: 13px;
+      font-size: 17px;
+      height: 450px;
+      padding: 8px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      resize: none;
+    }
+
+    .sidebar button:not(.sidebar-close) {
+      padding: 8px 12px;
+      margin-right: 10px;
+      background-color: #4e4e4e;
+      border: none;
+      color: #c4c4c4;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .sidebar button:hover {
+      background-color: #8d8d8d;
+    }
+
+    #tabs {
+      border: 3px solid;
+      position: fixed;
+      top: 20px;
+      left: 16px;
+      font-size: 36px;
+      background-color: #d4ffdf;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 1100;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 900;
+      display: none;
+    }
+
+    .footer-text {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .sidebar-header {
+  display: flex;
+  align-items: center; 
+  gap: 12px;          
+  margin-bottom: 1rem; 
+}
+
+    .sidebar-photo {
+    width: 35px;    
+    height: 35px;     
+     object-fit: cover;  
+     display: block;
+     margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <button class="sidebar-close" onclick="toggleSidebar()">✕</button>
+    <div class="sidebar-header">
+  <img src="logo.png" alt="Foto Logo Saya" class="sidebar-photo" />
+  <h2>Timer Sederhana</h2>
+    </div>
+    <label for="noteArea">Catatan:</label>
+    <textarea id="noteArea" placeholder="Tulis catatan di sini..."></textarea>
+    <br>
+    <button onclick="simpanCatatan()">Simpan</button>
+    <button onclick="hapusCatatan()">Hapus</button>
+  </div>
+
+  <div id="overlay"></div>
+
+  <a href="javascript:void(0);" id="tabs" onclick="toggleSidebar()" title="Buka Sidebar">=</a>
+
+  <main>
+    <div class="Homes">
+      <div class="background-image"></div>
+      <div id="blurcontainerSW"></div>
+      <div id="blurcontainerCT"></div>
+    </div>
+
+    <div>
+      <a href="Stopwatch/timer1.html" id="containerSW"></a>
+      <a href="Stopwatch/timer1.html" id="PlayHome">Stopwatch</a>
+    </div>
+
+    <div>
+      <a href="Countdown Timer/Ctimer1.html" id="containerCT"></a>
+      <a href="Countdown Timer/Ctimer1.html" id="PlayHome1">Countdown</a>
+    </div> 
+  </main>
+
+  <div class="Homes">
+    <a class="footer-text" target="_blank" id="Ayub">By Imanuel Ayub Flabianos</a>
+    <a class="footer-text" target="_blank" id="Kelas">X PPLG 1</a>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const tabs = document.getElementById('tabs');
+      const overlay = document.getElementById('overlay');
+
+      sidebar.classList.toggle('active');
+
+      if (sidebar.classList.contains('active')) {
+        tabs.style.display = 'none';
+        overlay.style.display = 'block';
+      } else {
+        tabs.style.display = 'block';
+        overlay.style.display = 'none';
+      }
+    }
+
+    function simpanCatatan() {
+      const isiCatatan = document.getElementById('noteArea').value;
+      localStorage.setItem('catatanSidebar', isiCatatan);
+    }
+
+    function hapusCatatan() {
+      if (confirm('Yakin ingin menghapus catatan?')) {
+        localStorage.removeItem('catatanSidebar');
+        document.getElementById('noteArea').value = '';
+      }
+    }
+
+    window.onload = function() {
+      const catatanTersimpan = localStorage.getItem('catatanSidebar');
+      if (catatanTersimpan) {
+        document.getElementById('noteArea').value = catatanTersimpan;
+      }
+
+      document.getElementById('overlay').addEventListener('click', toggleSidebar);
+    }
+  </script>
+
+</body>
+</html>

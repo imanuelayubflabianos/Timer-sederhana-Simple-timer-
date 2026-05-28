@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="Ctimer3.css" />
+</head>
+<body>
+
+  <audio id="alarmSound" src="alarmSound.mp3" preload="auto"></audio>
+
+  <a href="../Home.html" id="back2" class="back1">🔙</a>
+
+  <h1 id="miH1">Countdown Timer</h1>
+
+  <div id="container">
+    <div class="timer">
+      <h1 id="countdown">00:00:00:00</h1>
+      <div class="controls">
+        <input type="number" id="hours" min="0" max="23" placeholder="HH">
+        <input type="number" id="minutes" min="0" max="59" placeholder="MM">
+        <input type="number" id="seconds" min="0" max="59" placeholder="SS">
+        <br><br>
+        <button id="startTimer" onclick="startTimer()">Mulai</button>
+        <button id="stopTimer" onclick="stopTimer()">Berhenti</button>
+        <button id="resetTimer" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Ctimer2.js"></script>
+</body>
+</html>
